@@ -7,7 +7,7 @@ Future<void> main(List<String> arguments) async {
     '/bin/bash',
     [
       '-c',
-      'for i in *.*; do adb push "\$i" "${adb_transfer_files.Path.internalStorageDownload.path}"; done'
+      'for i in *.*; do adb push "\$i" "${adb_transfer_files.Path.sdCardMusic.path}"; done'
     ],
     workingDirectory: './files_to_transfer',
   );
